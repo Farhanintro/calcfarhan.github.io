@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <link rel="icon" href="" type="image/gif" sizes="16x16">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- aos css animate link -->
+    <link rel="stylesheet" href="Aos animate css & js/aos.css">
+    <!-- css link -->
     <link rel="stylesheet" href="css/farhancalc.css">
     <title>Farhan Calc</title>
 </head>
@@ -21,13 +24,13 @@
                    </label>
                  </div>
             </div>
-            <div class="calculater_body">
+            <div class="calculater_body" data-aos="flip-up">
                 <div>
                     <h1 id="output">0</h1>
                     <p id="input"></p>
                 </div>
             </div>
-            <div class="calculater_footer">
+            <div class="calculater_footer" data-aos="fade-down-right">
                 <div class="symbol" onclick="calculate('C')"><span>C</span></div>
                 <div class="symbol" onclick="calculate('AC')"><span>AC</span></div>
                 <div class="symbol" onclick="calculate('%')"><span>%</span></div>
@@ -56,5 +59,12 @@
     <script src="calculation.js/math.js"></script>
     <!-- External javascript link -->
     <script src="js/farhancalc.js"></script>
+    <!-- aos javascript link -->
+    <script src="Aos animate css & js\aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+      </script>
 </body>
 </html>
